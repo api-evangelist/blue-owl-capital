@@ -26,6 +26,8 @@ apis:
     description: >-
       The Blue Owl Capital API provides access to platform services and data for enterprise integration and automation.
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/blue-owl-capital
   - type: Website
     url: https://www.blueowl.com
 maintainers:
