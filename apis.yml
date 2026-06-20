@@ -2,7 +2,7 @@ aid: blue-owl-capital
 url: https://raw.githubusercontent.com/api-evangelist/blue-owl-capital/refs/heads/main/apis.yml
 name: Blue Owl Capital
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Alternative Asset Management
   - Private Credit
@@ -17,7 +17,7 @@ apis:
     tags:
       - Alternative Asset Management
       - Private Credit
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://api.blueowl.com
     humanURL: https://developer.blueowl.com
     properties:
