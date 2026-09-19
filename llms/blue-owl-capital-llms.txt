@@ -1,0 +1,85 @@
+# Blue Owl Capital
+
+> Blue Owl Capital Inc. (NYSE: OWL) is a New York-headquartered alternative asset manager formed
+> in 2021 from the merger of Owl Rock and Dyal Capital, with Oak Street joining in 2022. It manages
+> over $319 billion of assets across three platforms — Credit (direct lending), Real Assets (net
+> lease real estate and digital infrastructure) and GP Strategic Capital (minority stakes in
+> alternative asset managers) — plus insurance solutions, and serves institutional investors,
+> financial advisors, individual investors and insurance companies. Figures are as stated on
+> its own site in September 2026.
+
+## Machine-readable API surface
+
+**Blue Owl Capital publishes no API.** As of 2026-09-19 the company operates no developer
+program, no developer portal, no SDK, and no machine-readable contract of any kind. This was
+established by probe, not by assumption:
+
+- No OpenAPI, Swagger, GraphQL SDL, AsyncAPI, MCP or A2A surface on any host the company
+  controls (`/openapi.json`, `/swagger.json`, `/api-docs`, `/docs`, `/graphql`,
+  `/.well-known/agent-card.json`, `/.well-known/agent.json` and the rest all return a real
+  Drupal 404 on `www.blueowl.com`).
+- `developer.blueowl.com` and `api.blueowl.com` — the hostnames an earlier scaffold of this
+  profile named — do not resolve at all (DNS NXDOMAIN). They were never real hosts.
+- Every `/.well-known/` discovery path on `www.blueowl.com` and `wealth.blueowl.com` returns
+  404; `ir.blueowl.com` (a Q4 investor-relations platform) answers a few of them with an
+  11-byte "Invalid key" body, which is not a document (see
+  `well-known/blue-owl-capital-well-known.yml` for the full probe record).
+- The published sitemap (`https://www.blueowl.com/sitemap.xml`, 785 URLs) contains no
+  developer, API, docs or integration page. Its sections are platforms (credit, real-assets,
+  gp-strategic-capital, insurance-solutions), who-we-serve, about-us, our-team, insights,
+  news, careers, contact and legal.
+- `docs.blueowl.com` is a CNAME to CloudFiles (a document-sharing service) and redirects to
+  cloudfiles.io; it is not a documentation site.
+- No first-party package exists on npm or PyPI. A GitHub organization named "Blue Owl Capital"
+  (`github.com/BlueOwlCapital`) holds a single fork of Apache Superset and carries no website,
+  email or other evidence tying it to the company, so it is not recorded as the company's org.
+- The only investor-facing software surfaces are gated third-party portals reached from
+  `https://www.blueowl.com/portals`: the Blue Owl Investor Portal on iCapital
+  (`blueowl.icapitalnetwork.com`) and DST Vision for advisor/individual access to its REITs and
+  BDCs. Neither documents an API for Blue Owl.
+
+If you are an agent looking for a callable Blue Owl Capital API, there is not one to call.
+Public company data about Blue Owl is available from the SEC (EDGAR filings for NYSE: OWL) and
+from the investor-relations site, not from a Blue Owl-operated API.
+
+## Company pages
+
+- [Home](https://www.blueowl.com/): corporate overview.
+- [About us](https://www.blueowl.com/about-us): values, AUM, and the 2009-2025 history of Oak Street, Dyal and Owl Rock.
+- [Credit](https://www.blueowl.com/credit): direct lending platform.
+- [Real Assets](https://www.blueowl.com/real-assets): net lease real estate and digital infrastructure.
+- [GP Strategic Capital](https://www.blueowl.com/gp-strategic-capital): minority stakes in alternative asset managers.
+- [Insurance Solutions](https://www.blueowl.com/insurance-solutions)
+- [Our products](https://www.blueowl.com/our-products): redirects to blueowlproducts.com (BDCs, REITs, interval funds).
+- [Who we serve](https://www.blueowl.com/who-we-serve)
+- [Our team](https://www.blueowl.com/our-team)
+- [Insights](https://www.blueowl.com/insights): market perspectives and articles.
+- [News](https://www.blueowl.com/news): press releases.
+- [Investor Relations](https://ir.blueowl.com/overview/default.aspx): NYSE: OWL filings, results and events (Q4 platform; refuses non-browser clients with 403).
+- [Investor Portal](https://www.blueowl.com/portals): links to the iCapital and DST Vision login portals.
+- [Careers](https://www.blueowl.com/careers)
+- [Contact](https://www.blueowl.com/contact)
+- [Sustainability](https://www.blueowl.com/sustainability)
+
+## Security and fraud
+
+- [Fraud Awareness Notice](https://www.blueowl.com/fraud-awareness-notice): states that Blue
+  Owl personnel email only from `@blueowl.com`, that the primary website is blueowl.com, and
+  that the current lists of official product, IR and fund sites live on the Our Products and
+  Investor Portal pages. This is NOT a vulnerability-disclosure program; no security.txt, bug
+  bounty or trust center is published.
+
+## Legal and privacy
+
+- [Terms of Service](https://www.blueowl.com/terms-service)
+- [Privacy Notice](https://www.blueowl.com/privacy-notice): last revised May 1, 2026. Documents
+  a verifiable data-subject request channel (privacy@blueowl.com, 888-215-1944) and states no
+  sale or "sharing" of personal information in the preceding 12 months.
+- [Disclosure Information](https://www.blueowl.com/disclosure-information)
+- [Social Media Disclaimers](https://www.blueowl.com/social-media-disclaimers)
+
+## About this file
+
+Generated 2026-09-19 by API Evangelist from the provider record in `apis.yml` and the probes
+recorded in this repository (method: generated). Blue Owl Capital does not publish an
+`llms.txt` of its own (`https://www.blueowl.com/llms.txt` -> 404). Corrections: info@apievangelist.com.

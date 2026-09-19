@@ -4,23 +4,31 @@ schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main
 provider: Blue Owl Capital
 providerId: blue-owl-capital
 created: '2026-05-04'
-# Provenance stamped 2026-08-11: this artifact was written by the API Evangelist
-# bulk sweep dated 2026-05-04, not harvested from the provider. See roadmap#35.
-method: generated
-modified: '2026-05-05'
+# Provenance: originally written by the API Evangelist bulk sweep of 2026-05-04 (roadmap#35);
+# re-searched 2026-09-19 against blueowl.com and confirmed as a recorded absence.
+method: searched
+modified: '2026-09-19'
+plan_count: 0
 reconciled: false
 tags:
   - Alternative Asset Management
   - Private Credit
   - Real Assets
   - GP Strategic Capital
-description: Blue Owl Capital is an alternative asset manager (private credit, real assets, GP
-  strategic capital) with ~$315B AUM. It does not publish a developer or API pricing surface; revenue
-  is captured as fund-level management fees and incentive fees, not API consumption. This artifact is
-  a placeholder pending any future public developer offering.
+description: Blue Owl Capital does not publish a public API plans / pricing page. This artifact records
+  the absence of a self-serve commercial surface; see notes for research findings.
+notes: >-
+  Blue Owl Capital publishes no API plans or pricing page and no developer program of any kind. Searched
+  2026-09-19: the blueowl.com sitemap (785 URLs) carries no pricing, developer, API or docs page;
+  www.blueowl.com/openapi.json, /api-docs, /developers and every /.well-known/ discovery path return a real
+  404; developer.blueowl.com and api.blueowl.com do not resolve. Investor access runs through gated
+  third-party portals (iCapital, DST Vision) under fund subscription agreements, not a self-serve tier.
+  The "Partner / Contact Sales" plan below is generic scaffold shape retained for schema symmetry, not a
+  provider-published tier.
 sources:
-  - https://www.blueowl.com
-notes: No public Blue Owl developer portal or API pricing identified. Reconcile if/when one launches.
+  - https://www.blueowl.com/sitemap.xml
+  - https://www.blueowl.com/portals
+  - https://www.blueowl.com/our-products
 plans:
   - id: blue-owl-capital-partner
     name: Partner / Contact Sales

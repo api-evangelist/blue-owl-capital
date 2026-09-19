@@ -1,0 +1,47 @@
+generated: '2026-09-19'
+method: searched
+probe: true
+source: https://www.blueowl.com/privacy-notice
+note: >-
+  Blue Owl Capital is an alternative asset manager with a Drupal corporate site and no product
+  documentation, so the only regulatory-posture signal it publishes on a public surface is the
+  verifiable data-subject request channel in its Privacy Notice (last revised May 1, 2026).
+  The notice states the company has not sold or "shared" personal information in the preceding
+  12 months but makes NO statement about honoring Global Privacy Control signals, so
+  global_privacy_control is left unset rather than probed with a Sec-GPC header. No accessibility
+  conformance report, subprocessor list, DPA, SBOM, data-residency, AI-transparency, incident-SLA,
+  age-assurance, notice-and-action, transparency-report or exit-assistance page exists — every
+  conventional path returned a real Drupal 404. Prior artifacts offered nothing to harvest: no
+  security.txt, trust center, lifecycle or conformance file exists in this repository.
+probed:
+- {url: https://www.blueowl.com/accessibility, status: 404}
+- {url: https://www.blueowl.com/accessibility/vpat, status: 404}
+- {url: https://www.blueowl.com/vpat, status: 404}
+- {url: https://www.blueowl.com/legal, status: 404}
+- {url: https://www.blueowl.com/legal/subprocessors, status: 404}
+- {url: https://www.blueowl.com/legal/dpa, status: 404}
+- {url: https://www.blueowl.com/privacy/requests, status: 404}
+- {url: https://www.blueowl.com/transparency, status: 404}
+- {url: https://www.blueowl.com/trust, status: 404}
+- {url: https://www.blueowl.com/security, status: 404}
+- {url: https://www.blueowl.com/security/sbom, status: 404}
+- {url: https://www.blueowl.com/docs/data-residency, status: 404}
+- {url: https://www.blueowl.com/ai, status: 404}
+- {url: https://www.blueowl.com/ai/transparency, status: 404}
+- {url: https://www.blueowl.com/legal/report-content, status: 404}
+- {url: https://www.blueowl.com/cookie-policy, status: 404}
+- {url: https://www.blueowl.com/privacy-notice, status: 200}
+- {url: https://www.blueowl.com/terms-service, status: 200}
+- {url: https://www.blueowl.com/disclosure-information, status: 200}
+- {url: https://www.blueowl.com/fraud-awareness-notice, status: 200}
+signals:
+  data_subject_request:
+    url: https://www.blueowl.com/privacy-notice
+    channels:
+      email: privacy@blueowl.com
+      phone: 888-215-1944
+    note: >-
+      The Privacy Notice ("Privacy Rights Provided by Applicable Law" and the Notice for California
+      Residents) documents a verifiable consumer request process by toll-free phone or email, with
+      authorized-agent submissions accepted at the same address. No web form and no API endpoint
+      is documented.

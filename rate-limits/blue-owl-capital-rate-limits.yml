@@ -4,21 +4,28 @@ schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main
 provider: Blue Owl Capital
 providerId: blue-owl-capital
 created: '2026-05-04'
-# Provenance stamped 2026-08-11: this artifact was written by the API Evangelist
-# bulk sweep dated 2026-05-04, not harvested from the provider. See roadmap#35.
-method: generated
-modified: '2026-05-05'
+# Provenance: originally written by the API Evangelist bulk sweep of 2026-05-04 (roadmap#35);
+# re-searched 2026-09-19 against blueowl.com and confirmed as a recorded absence.
+method: searched
+modified: '2026-09-19'
+limit_count: 0
 reconciled: false
 tags:
   - Alternative Asset Management
   - Private Credit
   - Rate Limiting
-description: Blue Owl Capital does not publish an API rate-limit policy. The firm is an asset
-  manager rather than a developer-facing platform; integration controls live inside LP / advisor
-  contracts.
+description: Blue Owl Capital does not publish concrete rate-limit numbers, throttling thresholds, or
+  response-header conventions. This artifact records the gap; see notes for research findings.
+notes: >-
+  Blue Owl Capital publishes no rate-limit numbers, throttling policy or response-header conventions
+  because it publishes no API. Searched 2026-09-19: no developer documentation exists on blueowl.com
+  (the 785-URL sitemap has no developer/API/docs page), every contract-discovery path 404s, and the
+  api-shaped hostnames the earlier scaffold named (developer.blueowl.com, api.blueowl.com) do not
+  resolve. The responseCodes/limits/policies below are generic guidance retained from the earlier
+  scaffold, not provider-published values.
 sources:
-  - https://www.blueowl.com
-notes: No public API rate-limit documentation identified.
+  - https://www.blueowl.com/sitemap.xml
+  - https://www.blueowl.com/portals
 responseCodes:
   throttled: 429
 limits:

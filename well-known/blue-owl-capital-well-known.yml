@@ -1,0 +1,174 @@
+generated: '2026-09-19'
+method: probed
+source: >-
+  Live unauthenticated GET of the /.well-known/ path list against every host this record
+  knows: the registrable domain blueowl.com (apex + www), the investor-relations host
+  ir.blueowl.com, the financial-advisor host wealth.blueowl.com, and the two api-shaped
+  hostnames the earlier scaffold named (developer.blueowl.com, api.blueowl.com). There is no
+  OpenAPI servers[] host, no MCP host, and no fetched discovery document named an
+  authorization_servers host, so the host list is complete.
+note: >-
+  Nothing was served. This file records a measured ABSENCE, so NO WellKnown, APICatalog or
+  SecurityTxt pointer is wired into apis.yml. Three miss shapes were observed. (1) www.blueowl.com
+  (the apex 302s here) answers every /.well-known/ path with a real 404 whose body is the Drupal
+  "Page not found" template — an honest miss. (2) ir.blueowl.com, a Q4 Inc. investor-relations
+  platform, answers /.well-known/security.txt, /ai-plugin.json, /agent-card.json and /agent.json
+  with HTTP 200 and an 11-byte text/html body reading "Invalid key"; a 200 that carries no document
+  is recorded as a miss. Its other well-known paths 301 to a trailing-slash variant of themselves
+  and the page root refuses curl with a 403 even under a browser User-Agent. (3) developer.blueowl.com
+  and api.blueowl.com do not resolve at all (DNS NXDOMAIN, status 0): they were scaffold values,
+  never real hosts, and the apis[] entry that pointed at them has been removed.
+hosts:
+- host: www.blueowl.com
+  note: Primary corporate host (blueowl.com 302s here). Real Drupal 404 on every path.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /llms.txt
+    status: 404
+    file: null
+  - path: /openapi.json
+    status: 404
+    file: null
+- host: blueowl.com
+  note: Apex; every path 302s to www.blueowl.com and lands on the same Drupal 404.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: ir.blueowl.com
+  note: >-
+    Q4 Inc. investor-relations platform. The 200s below are an 11-byte "Invalid key" text/html
+    body, not a document; treated as misses. The 301s point at the same path with a trailing slash.
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: 'body is the string "Invalid key" (text/html, 11 bytes) — soft-200, no document'
+  - path: /.well-known/openid-configuration
+    status: 301
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 301
+    file: null
+  - path: /.well-known/api-catalog
+    status: 301
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: 'body is the string "Invalid key" — soft-200, no document'
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: 'body is the string "Invalid key" — soft-200, no document'
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: 'body is the string "Invalid key" — soft-200, no document'
+  - path: /openapi.json
+    status: 404
+    file: null
+  - path: /llms.txt
+    status: 404
+    file: null
+- host: wealth.blueowl.com
+  note: Financial-advisor marketing site (root 302s to /bo). Every path 404s with the site's error page.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /openapi.json
+    status: 404
+    file: null
+  - path: /llms.txt
+    status: 404
+    file: null
+- host: developer.blueowl.com
+  note: Does not resolve (DNS NXDOMAIN). Scaffold hostname, never a real host.
+  documents:
+  - path: /.well-known/security.txt
+    status: 0
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 0
+    file: null
+- host: api.blueowl.com
+  note: Does not resolve (DNS NXDOMAIN). Scaffold hostname, never a real host.
+  documents:
+  - path: /.well-known/security.txt
+    status: 0
+    file: null
+  - path: /openapi.json
+    status: 0
+    file: null
