@@ -62,6 +62,8 @@ modified: '2026-09-19'
 specificationVersion: '0.23'
 apis: []
 common:
+  - type: FinOps
+    url: finops/blue-owl-capital-finops.yml
   - type: Website
     url: https://www.blueowl.com
   - type: About
