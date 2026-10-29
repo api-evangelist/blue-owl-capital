@@ -1,4 +1,4 @@
-# Blue Owl Capital (blue-owl-capital)
+# Blue Owl Capital
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,23 +64,101 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Blue Owl Capital is a major US corporation and Fortune 1000 company. The Blue Owl Capital API provides programmatic access to its platform services, data, and integrations for enterprise customers and partners.
+Blue Owl Capital Inc. (NYSE: OWL) is a New York-headquartered alternative asset manager formed in 2021 from the merger of Owl Rock and Dyal Capital, with Oak Street joining in 2022. It manages over $319 billion of assets across three platforms — Credit (direct lending), Real Assets (net lease real estate and digital infrastructure) and GP Strategic Capital (minority stakes in alternative asset managers) — plus insurance solutions, serving institutional investors, financial advisors, individual investors and insurance companies, and runs several publicly traded BDCs including Blue Owl Capital Corporation. Blue Owl publishes no public API, developer portal, SDK or machine-readable contract; its only investor-facing software surfaces are gated third-party portals (iCapital, DST Vision) reached from blueowl.com/portals.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/blue-owl-capital/refs/heads/main/apis.yml)
+**Areas:** Alternative Asset Management · Private Credit · Real Assets · GP Strategic Capital · Direct Lending · Net Lease Real Estate · Insurance Solutions · Asset Management · Financial Services
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## Blue Owl Capital on APIs.io
 
-## Tags:
+Everything profiled for Blue Owl Capital is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/blue-owl-capital/](https://apis.io/providers/blue-owl-capital/)** — or go straight to one of the APIs or properties below.
 
- - Alternative Asset Management, Private Credit
+### Published properties
 
-## Timestamps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- **Created:** 2026-04-19
-- **Modified:** 2026-04-19
+#### Security (1)
 
-## Maintainers
+Authentication, trust centre, and vulnerability disclosure.
 
-**FN:** Kin Lane
+- [Blue Owl Capital Domain Security](https://apis.io/security/blue-owl-capital/blue-owl-capital-domain-security/)
 
-**Email:** kin@apievangelist.com
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Blue Owl Capital Plans Pricing](https://apis.io/plans/blue-owl-capital/blue-owl-capital-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Blue Owl Capital Rate Limits](https://apis.io/rate-limits/blue-owl-capital/blue-owl-capital-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Blue Owl Capital Finops](https://apis.io/finops/blue-owl-capital/blue-owl-capital-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.blueowl.com)
+- [Support](https://www.blueowl.com/contact)
+- [Blog](https://www.blueowl.com/insights)
+- [Terms of service](https://www.blueowl.com/terms-service)
+- [Privacy policy](https://www.blueowl.com/privacy-notice)
+
+## API Evangelist rating
+
+**Kin Score 19.5** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 21.1 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 48.7 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 15.8** — Insurance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/blue-owl-capital/](https://apis.io/providers/blue-owl-capital/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Blue Owl Capital: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/blue-owl-capital/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
