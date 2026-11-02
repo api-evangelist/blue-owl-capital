@@ -1,0 +1,71 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Blue Owl Capital
+providerId: blue-owl-capital
+created: '2026-05-04'
+# Provenance: originally written by the API Evangelist bulk sweep of 2026-05-04 (roadmap#35);
+# re-searched 2026-09-19 against blueowl.com and confirmed as a recorded absence.
+method: searched
+modified: '2026-09-19'
+plan_count: 0
+reconciled: false
+tags:
+  - Alternative Asset Management
+  - Private Credit
+  - Real Assets
+  - GP Strategic Capital
+description: Blue Owl Capital does not publish a public API plans / pricing page. This artifact records
+  the absence of a self-serve commercial surface; see notes for research findings.
+notes: >-
+  Blue Owl Capital publishes no API plans or pricing page and no developer program of any kind. Searched
+  2026-09-19: the blueowl.com sitemap (785 URLs) carries no pricing, developer, API or docs page;
+  www.blueowl.com/openapi.json, /api-docs, /developers and every /.well-known/ discovery path return a real
+  404; developer.blueowl.com and api.blueowl.com do not resolve. Investor access runs through gated
+  third-party portals (iCapital, DST Vision) under fund subscription agreements, not a self-serve tier.
+  The "Partner / Contact Sales" plan below is generic scaffold shape retained for schema symmetry, not a
+  provider-published tier.
+sources:
+  - https://www.blueowl.com/sitemap.xml
+  - https://www.blueowl.com/portals
+  - https://www.blueowl.com/our-products
+plans:
+  - id: blue-owl-capital-partner
+    name: Partner / Contact Sales
+    type: enterprise
+    description: Custom-negotiated relationships for limited partners, financial advisors,
+      institutional investors, and portfolio companies.
+    entries:
+      - label: Partner / LP relationship
+        name: partner_access
+        type: subscription
+        metric: varies
+        limit: -1
+        timeFrame: year
+        geo: global
+        unit: 1
+        price: contact sales
+        userMultiplied: false
+    elements:
+      - name: LP / advisor onboarding
+      - name: NDA and compliance review
+      - name: Fund subscription documentation
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
+x-canonical:
+  generated: '2026-11-01'
+  vocabulary: engine/economics/plans-canonical.yml
+  models:
+  - subscription
+  units:
+  - negotiated
+  plans:
+  - name: Partner / Contact Sales
+    access: enterprise
+    model: subscription
+    model_how: derived
+    units:
+    - negotiated
+    periods:
+    - year
